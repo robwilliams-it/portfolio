@@ -1,14 +1,14 @@
-import logo from './logo.svg';
+// import Moda from './javascript/work_history/moda.js';
+import { Moda, Fendi, Chase } from './javascript/work_history/index.js';
+import JobDetails from './components/jobDetails.js';
 import './App.css';
 
 function App() {
+
   return (
-    <div className="App">
+    <div className="Resume">
+      {/* TODO: update this whole component */}
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -18,6 +18,15 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <div>
+        <JobDetails job={Moda} company={"Moda"}/>
+        <br/>
+        <JobDetails job={Fendi} company={"Fendi"}/>
+        <br/>
+        <JobDetails job={Chase} company={"Chase"}/>
+        <br/>
+      </div>
     </div>
   );
 }

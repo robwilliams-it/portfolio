@@ -1,4 +1,4 @@
-export default Fendi = {
+const Fendi = {
     positions: [
         {
             title: "Help Desk Support (Contract)",
@@ -12,9 +12,10 @@ export default Fendi = {
                 "Managed IT for Sample Sale which required workstation configuration for system and POS communication",
             ],
             start: 0,
-            end: 1,
+            end: 1
         }
-    ]
+    ],
+    summary: ""
 }
 
-
+export default Fendi;

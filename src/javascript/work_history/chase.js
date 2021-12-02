@@ -1,4 +1,4 @@
-export default Chase = {
+const Chase = {
     positions : [
         {
             title: "Investment Banking Technology Operations Analyst",
@@ -10,7 +10,10 @@ export default Chase = {
                 "Handled trouble tickets and maintained workstation performance for 300 analysts in two different groups simultaneously",
             ],
             start: 0,
-            end: 1,
+            end: 1
         }
-    ]
+    ],
+    summary: ""
 }
+
+export default Chase;

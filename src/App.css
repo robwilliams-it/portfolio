@@ -15,10 +15,10 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+#work{
+  box-sizing: border-box;
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: ghostwhite;
+
+}
+
+/* #work_content{
+  width: 90%;
+  margin: auto;
+} */
