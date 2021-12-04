@@ -3,6 +3,18 @@ import ResumeButton from './resumeDownload.js';
 
 const HeaderButtons = () => {
     return (
+        
+        <header 
+        id="header"
+        className="App-header" 
+        stlye={{
+          position: "relative",
+          top: 0,
+          // height: "200px",
+          // display: "grid",
+          // justifyContent: "center",
+        }}
+      >
         <Grid
             container
             direction="row-reverse"
@@ -39,6 +51,8 @@ const HeaderButtons = () => {
             </Grid>
             
         </Grid>
+
+      </header>
     )
 }
 

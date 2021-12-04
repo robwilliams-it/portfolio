@@ -3,42 +3,46 @@ import { Moda, Fendi, Chase } from './javascript/work_history/index.js';
 import Links from './javascript/external_links/index.js';
 import JobDetails from './components/jobDetails.js';
 import { Button, Typography } from '@mui/material';
-import HeaderButtons from './components/header.js';
-import Footer from './components/footer.js';
+import { HeaderButtons, Footer, Hero } from './components/index.js';
 import './App.css';
+import { grid } from '@mui/system';
 
 function App() {
 
   return (
-    <div className="Portfolio" style={{height: "100vh"}}>
+    <div className="Portfolio" style={{height: "100vh", overflow: "hidden"}}>
       {/* TODO: update this whole component */}
-      <header 
-        className="App-header" 
-        position="absolute"
+      
+      <HeaderButtons />
+      
+      <main
+        style={{
+          height: "100vh",
+          overflow: "scroll"
+        }}
       >
-  
-        <HeaderButtons />
+        <Hero />
 
-      </header>
-
+        <div id="experiance"
+          style={{height: "100vh", backgroundColor: "ghostWhite"}}
+        >
+          <JobDetails job={Moda} company={"Moda"}/>
+          <br/>
+          <JobDetails job={Fendi} company={"Fendi"}/>
+          <br/>
+          <JobDetails job={Chase} company={"Chase"}/>
+          <br/>
+        </div>
+      </main>
+      
       <div
-        style={{height: "100vh", backgroundColor: "linen"}}
+        style={{
+          position: "absolute",
+          bottom: 1
+        }}
       >
-
+        <Footer gitHub={Links.github} linkedIn={Links.linkedIn}/>
       </div>
-
-      <div id="experiance"
-        style={{height: "100vh", backgroundColor: "ghostWhite"}}
-      >
-        <JobDetails job={Moda} company={"Moda"}/>
-        <br/>
-        <JobDetails job={Fendi} company={"Fendi"}/>
-        <br/>
-        <JobDetails job={Chase} company={"Chase"}/>
-        <br/>
-      </div>
-
-      <Footer gitHub={Links.github} linkedIn={Links.linkedIn}/>
 
     </div>
   );
