@@ -1,26 +1,17 @@
-import { Button, Typography } from '@mui/material';
+import { Button } from '@mui/material';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 const ResumeButton =() => {
-
-    const handleClick = (event) => {
-        console.log('click ', event.target);
-    }
 
     return (
         <Button 
             id="resumeDownload"
+            href="Rob_Williams_Resume.docx"
             variant="contained"
-            onClick={handleClick}
+            // color="00E0FF"
         >
-            <Typography>
-                <a
-                className="resumeLink"
-                href="/Rob_Williams_Resume.docx"
-                style={{color: 'white'}}
-                >
-                Resume
-                </a>
-            </Typography>
+            Resume
+            <FileDownloadIcon />
         </Button>
     )
 }
