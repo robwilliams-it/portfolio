@@ -1,22 +1,22 @@
 // import Moda from './javascript/work_history/moda.js';
 import { Moda, Fendi, Chase } from './javascript/work_history/index.js';
+import { Links } from './javascript/external_links/index.js';
 import JobDetails from './components/jobDetails.js';
+import { Button, Typography } from '@mui/material';
+import ResumeButton from './components/resumeDownload.js';
 import './App.css';
 
 function App() {
 
+
+
   return (
-    <div className="Resume">
+    <div className="Portfolio">
       {/* TODO: update this whole component */}
       <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <ResumeButton />
+
       </header>
 
       <div>
