@@ -1,4 +1,5 @@
-import { Button, Grid, Link } from '@mui/material';
+import { Link } from "react-router-dom";
+import { Button, Grid } from '@mui/material';
 import ResumeButton from './resumeDownload.js';
 
 const HeaderButtons = () => {
@@ -15,6 +16,24 @@ const HeaderButtons = () => {
           // justifyContent: "center",
         }}
       >
+        
+        <Link to="/">
+            <div
+                style={{
+                    position: "absolute",
+                    backgroundColor:"red",
+                    height:"60px",
+                    width:"60px",
+                    float:"left",
+                    alignSelf:"center"
+                }}
+            >
+                Replace
+                With
+                Image 
+            </div>
+        </Link>
+
         <Grid
             container
             direction="row-reverse"
@@ -27,25 +46,25 @@ const HeaderButtons = () => {
             </Grid>
 
             <Grid item>
-                <Link href="#about">
+                <Link to="/about">
                     Get To Know Me
                 </Link>
             </Grid>
 
             <Grid item>
-                <Link href="#projects">
+                <Link to="/projects">
                     Projects
                 </Link>
             </Grid>
 
             <Grid item>
-                <Link href="#experiance">
+                <Link to="/experiance">
                     Experiance
                 </Link>
             </Grid>
 
             <Grid item>
-                <Link href="#contact">
+                <Link to="/contact">
                     Contract
                 </Link>
             </Grid>
