@@ -30,19 +30,20 @@ function App() {
           <Routes>
             <Route path="/" element={<Hero/>}/>
 
-          {/* <Route >
-            <div id="experiance"
-              style={{height: "100vh", backgroundColor: "ghostWhite"}}
-            >
-              <JobDetails job={Moda} company={"Moda"}/>
-              <br/>
-              <JobDetails job={Fendi} company={"Fendi"}/>
-              <br/>
-              <JobDetails job={Chase} company={"Chase"}/>
-              <br/>
-            </div>
+            <Route path="/experiance" element={
+              <div id="experiance"
+                style={{height: "100vh", backgroundColor: "ghostWhite"}}
+              >
+                <JobDetails job={Moda} company={"Moda"}/>
+                <br/>
+                <JobDetails job={Fendi} company={"Fendi"}/>
+                <br/>
+                <JobDetails job={Chase} company={"Chase"}/>
+                <br/>
+              </div>
+            }/>
+              
 
-          </Route> */}
           </Routes>
         </main>
         
