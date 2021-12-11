@@ -46,13 +46,6 @@ const HeaderButtons = () => {
             </Grid>
 
             <Grid item>
-                <Link to="/about">
-                    Get To Know Me
-                </Link>
-            </Grid>
-            
-
-            <Grid item>
                 <Link to="/projects">
                     Projects
                 </Link>
@@ -66,7 +59,7 @@ const HeaderButtons = () => {
 
             <Grid item>
                 <Link to="/contact">
-                    Contract
+                    Contact
                 </Link>
             </Grid>
             

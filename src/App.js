@@ -31,16 +31,28 @@ function App() {
             <Route path="/" element={<Hero/>}/>
 
             <Route path="/experiance" element={
+
               <div id="experiance"
-                style={{height: "100vh", backgroundColor: "ghostWhite"}}
+                style={{
+                  height: "100vh", 
+                  backgroundColor: "ghostWhite",
+                  top: -40,
+                  zIndex: "-1",
+                  display: "grid",
+                  justifyContent: "center",
+                  alignItems: "center"
+                }}
               >
-                <JobDetails job={Moda} company={"Moda"}/>
-                <br/>
-                <JobDetails job={Fendi} company={"Fendi"}/>
-                <br/>
-                <JobDetails job={Chase} company={"Chase"}/>
-                <br/>
+                <div style={{height: "500px"}}>
+                  <JobDetails job={Moda} company={"Moda"}/>
+                  <br/>
+                  <JobDetails job={Fendi} company={"Fendi"}/>
+                  <br/>
+                  <JobDetails job={Chase} company={"Chase"}/>
+                  <br/>
+                </div>
               </div>
+
             }/>
               
 
