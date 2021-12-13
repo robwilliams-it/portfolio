@@ -1,22 +1,7 @@
 import { JobDetails } from "../components";
+import { Moda, Fendi, Chase } from "../javascript/work_history/index.js";
 
-const Experiance = (props) => {
-    const { jobs } = props || "";
-    
-    renderJobs = () => {
-        if(typeof jobs !== "string") {
-            return (
-                jobs.map((job, key)=>{
-                    return(
-                        <JobDetails id={key} job={job.details} company={job.company}/>
-                    )
-                })
-            )
-        } else {
-            return <div/>
-        }
-    }
-
+const Experiance = () => {
     return (
         <div id="experiance"
             style={{
@@ -28,7 +13,15 @@ const Experiance = (props) => {
                 alignItems: "center"
             }}
         >
-            {renderJobs()}
+            <div>
+                <JobDetails job={Moda} company={"Moda"}/>
+                <br/>
+                <JobDetails job={Fendi} company={"Fendi"}/>
+                <br/>
+                <JobDetails job={Chase} company={"Chase"}/>
+                <br/>
+            </div>
+
         </div>
     )
 

@@ -5,7 +5,7 @@ import Links from './javascript/external_links/index.js';
 import JobDetails from './components/jobDetails.js';
 import { Button, Typography } from '@mui/material';
 import { HeaderButtons, Footer, Hero } from './components/index.js';
-import { Experiance } from './pages/experiance.js';
+import Experiance from './pages/experiance.js';
 import './App.css';
 import { grid } from '@mui/system';
 
