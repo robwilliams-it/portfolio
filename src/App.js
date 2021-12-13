@@ -5,6 +5,7 @@ import Links from './javascript/external_links/index.js';
 import JobDetails from './components/jobDetails.js';
 import { Button, Typography } from '@mui/material';
 import { HeaderButtons, Footer, Hero } from './components/index.js';
+import { Experiance } from './pages/experiance.js';
 import './App.css';
 import { grid } from '@mui/system';
 
@@ -30,31 +31,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Hero/>}/>
 
-            <Route path="/experiance" element={
-
-              <div id="experiance"
-                style={{
-                  height: "100vh", 
-                  backgroundColor: "ghostWhite",
-                  top: -40,
-                  zIndex: "-1",
-                  display: "grid",
-                  justifyContent: "center",
-                  alignItems: "center"
-                }}
-              >
-                <div style={{height: "500px"}}>
-                  <JobDetails job={Moda} company={"Moda"}/>
-                  <br/>
-                  <JobDetails job={Fendi} company={"Fendi"}/>
-                  <br/>
-                  <JobDetails job={Chase} company={"Chase"}/>
-                  <br/>
-                </div>
-              </div>
-
-            }/>
-              
+            <Route path="/experiance" element={ <Experiance/> }/>
 
           </Routes>
         </main>
