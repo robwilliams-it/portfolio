@@ -27,19 +27,21 @@ function App() {
           }}
           >
 
-
           <Routes>
             <Route path="/" element={<Hero/>}/>
 
             <Route path="/experiance" element={ <Experiance/> }/>
 
           </Routes>
+
         </main>
         
         <div
           style={{
             position: "absolute",
-            bottom: 1
+            bottom: 1,
+            // width: "190px",
+            // height: "350px"
           }}
         >
           <Footer gitHub={Links.github} linkedIn={Links.linkedIn}/>

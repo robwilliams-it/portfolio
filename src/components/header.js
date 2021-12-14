@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button, Grid } from '@mui/material';
+import { Button, Grid, Card, Typography } from '@mui/material';
 import ResumeButton from './resumeDownload.js';
 
 const HeaderButtons = () => {
@@ -17,22 +17,33 @@ const HeaderButtons = () => {
         }}
       >
         
-        <Link to="/">
-            <div
-                style={{
-                    position: "absolute",
-                    backgroundColor:"red",
-                    height:"60px",
-                    width:"60px",
-                    float:"left",
-                    alignSelf:"center"
-                }}
-            >
-                Replace
-                With
-                Image 
-            </div>
-        </Link>
+        <div
+            style={{
+                display: "grid",
+                position: "absolute",
+                alignItems:"center",
+                height: "36.5px",
+                paddingLeft: "20px"
+            }}
+        >
+            <Link to="/">
+                <Card
+                    sx={{
+                        height:"36.5px",
+                        width:"36.5px",
+                        backgroundColor:"#00E0FF",
+                        display:"grid",
+                        alignContent:"center",
+                        justifyContent:"center",
+                        color:"white"
+                    }}
+                >
+                    <Typography>
+                        R
+                    </Typography>
+                </Card>
+            </Link>
+        </div>
 
         <Grid
             container
@@ -41,6 +52,7 @@ const HeaderButtons = () => {
             alignItems="center"
             columnSpacing={2}
         > 
+
             <Grid item>
                 <ResumeButton />
             </Grid>

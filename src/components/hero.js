@@ -1,12 +1,11 @@
 const Hero = () => {
 
     return (
-        <div
+        <div id="home"
           style={{
             height: "100vh", 
             position: "relative",
             top: -40,
-            zIndex: "-1",
             display: "grid",
             justifyContent: "center",
             alignItems: "center"
@@ -20,7 +19,7 @@ const Hero = () => {
               Rob
             </h1>
             <h2>
-              Full Stack Software Engineer
+              Full Stack Software Engineer with 10 years of experience working in tech.
             </h2>
           </div>
         </div>

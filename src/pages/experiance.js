@@ -10,10 +10,11 @@ const Experiance = () => {
                 zIndex: "-1",
                 display: "grid",
                 justifyContent: "center",
-                alignItems: "center"
+                alignItems: "center",
+                width: "100%"
             }}
         >
-            <div>
+            <div id="job-experiance">
                 <JobDetails job={Moda} company={"Moda"}/>
                 <br/>
                 <JobDetails job={Fendi} company={"Fendi"}/>

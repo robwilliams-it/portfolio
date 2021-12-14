@@ -33,12 +33,15 @@ const Footer =(props) => {
                 alignItems="center"
             >
                 <Grid item>
-                    <ResumeButton />
+                    <ResumeButton/>
                 </Grid>
 
                 <Button
                     id="linkedIn"
                     onClick={ handleClick }
+                    sx={{
+                        color: "black"
+                    }}
                 >
                     <LinkedInIcon id="linkedIn"/>
                 </Button>
@@ -47,6 +50,9 @@ const Footer =(props) => {
                 <Button
                     id="gitHub"
                     onClick={ handleClick }
+                    sx={{
+                        color: "black"
+                    }}
                 >
                     <GitHubIcon id="gitHub"/>
                 </Button>

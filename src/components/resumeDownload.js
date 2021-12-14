@@ -9,6 +9,9 @@ const ResumeButton =() => {
             href="Rob_Williams_Resume.docx"
             variant="contained"
             // color="00E0FF"
+            sx={{
+                backgroundColor: "#00E0FF"
+            }}
         >
             Resume
             <FileDownloadIcon />
