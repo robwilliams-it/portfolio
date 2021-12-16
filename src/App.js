@@ -7,7 +7,6 @@ import { Button, Typography } from '@mui/material';
 import { HeaderButtons, Footer, Hero } from './components/index.js';
 import Experiance from './pages/experiance.js';
 import './App.css';
-import { grid } from '@mui/system';
 
 function App() {
 
@@ -36,16 +35,9 @@ function App() {
 
         </main>
         
-        <div
-          style={{
-            position: "absolute",
-            bottom: 1,
-            // width: "190px",
-            // height: "350px"
-          }}
-        >
-          <Footer gitHub={Links.github} linkedIn={Links.linkedIn}/>
-        </div>
+
+        <Footer gitHub={Links.github} linkedIn={Links.linkedIn}/>
+
 
       </div>
 

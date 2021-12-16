@@ -25,7 +25,20 @@ const Footer =(props) => {
     }
 
     return (
-        <Box>
+        <Box 
+            id="footer"
+            sx={{
+                position: "absolute",
+                bottom: "242px",
+            }}
+        >
+            <img 
+                src="sidebar.png"
+                style={{
+                    position:"absolute",
+                    height:"350px",
+                }}
+            />
             <Grid
                 container
                 direction="column"
@@ -33,7 +46,7 @@ const Footer =(props) => {
                 alignItems="center"
             >
                 <Grid item>
-                    <ResumeButton/>
+                    <ResumeButton alt={true}/>
                 </Grid>
 
                 <Button

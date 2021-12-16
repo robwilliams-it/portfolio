@@ -1,7 +1,18 @@
 import { Button } from '@mui/material';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
-const ResumeButton =() => {
+const ResumeButton =(props) => {
+    const {alt} = props || false;
+
+    const getColors=(indicator)=>{
+        if (indicator === "bg" && alt) {
+            return "black"
+        } else if (indicator === "c" && !alt) {
+            return "black"
+        } else {
+            return "#00E0FF"
+        }
+    }
 
     return (
         <Button 
@@ -10,7 +21,9 @@ const ResumeButton =() => {
             variant="contained"
             // color="00E0FF"
             sx={{
-                backgroundColor: "#00E0FF"
+                backgroundColor: getColors("bg"),
+                color: getColors("c"),
+                fontWeight: "bold"
             }}
         >
             Resume
