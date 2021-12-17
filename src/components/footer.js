@@ -29,7 +29,8 @@ const Footer =(props) => {
             id="footer"
             sx={{
                 position: "absolute",
-                bottom: "242px",
+                bottom: "0px",
+                height:"350px",
             }}
         >
             <img 
@@ -42,33 +43,45 @@ const Footer =(props) => {
             <Grid
                 container
                 direction="column"
-                justifyContent="center"
+                justifyContent="space-evenly"
                 alignItems="center"
+                sx={{
+                    height: "100%",
+                    ml: "10px",
+                }}
             >
                 <Grid item>
                     <ResumeButton alt={true}/>
                 </Grid>
 
-                <Button
-                    id="linkedIn"
-                    onClick={ handleClick }
-                    sx={{
-                        color: "black"
-                    }}
-                >
-                    <LinkedInIcon id="linkedIn"/>
-                </Button>
+                <Grid item>
+                    <Button
+                        id="linkedIn"
+                        onClick={ handleClick }
+                        sx={{
+                            height:"32px",
+                            width:"32px",
+                            color: "black"
+                        }}
+                    >
+                        <LinkedInIcon id="linkedIn" fontSize="large"/>
+                    </Button>
+                </Grid>
 
+                <Grid item>
+                    <Button
+                        id="gitHub"
+                        onClick={ handleClick }
+                        sx={{
+                            height:"32px",
+                            width:"32px",
+                            color: "black"
+                        }}
+                    >
+                        <GitHubIcon id="gitHub" fontSize="large"/>
+                    </Button>
+                </Grid>
 
-                <Button
-                    id="gitHub"
-                    onClick={ handleClick }
-                    sx={{
-                        color: "black"
-                    }}
-                >
-                    <GitHubIcon id="gitHub"/>
-                </Button>
 
             </Grid>
         </Box>

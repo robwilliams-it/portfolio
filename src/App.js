@@ -4,8 +4,8 @@ import { Moda, Fendi, Chase } from './javascript/work_history/index.js';
 import Links from './javascript/external_links/index.js';
 import JobDetails from './components/jobDetails.js';
 import { Button, Typography } from '@mui/material';
-import { HeaderButtons, Footer, Hero } from './components/index.js';
-import Experiance from './pages/experiance.js';
+import { HeaderButtons, Footer } from './components/index.js';
+import { Experiance, Landing } from './pages/index.js';
 import './App.css';
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
           >
 
           <Routes>
-            <Route path="/" element={<Hero/>}/>
+            <Route path="/" element={<Landing/>}/>
 
             <Route path="/experiance" element={ <Experiance/> }/>
 

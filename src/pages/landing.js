@@ -1,4 +1,4 @@
-const Hero = () => {
+const Landing = () => {
 
     return (
         <div id="home"
@@ -26,4 +26,4 @@ const Hero = () => {
     )
 }
 
-export default Hero;
+export default Landing;

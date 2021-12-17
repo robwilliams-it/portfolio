@@ -6,5 +6,5 @@ export { default as JobDetails } from './jobDetails.js';
 
 export { default as ResumeButton } from './resumeDownload.js';
 
-export { default as Hero } from './hero.js';
+
 
