@@ -5,7 +5,7 @@ import Links from './javascript/external_links/index.js';
 import JobDetails from './components/jobDetails.js';
 import { Button, Typography } from '@mui/material';
 import { HeaderButtons, Footer } from './components/index.js';
-import { Experiance, Landing } from './pages/index.js';
+import { Experiance, Landing, Contact, Projects } from './pages/index.js';
 import './App.css';
 
 function App() {
@@ -30,6 +30,10 @@ function App() {
             <Route path="/" element={<Landing/>}/>
 
             <Route path="/experiance" element={ <Experiance/> }/>
+
+            <Route path="/contact" element={ <Contact/> }/>
+
+            <Route path="/projects" element={ <Projects/> }/>
 
           </Routes>
 

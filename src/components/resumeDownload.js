@@ -19,7 +19,6 @@ const ResumeButton =(props) => {
             id="resumeDownload"
             href="Rob_Williams_Resume.docx"
             variant="contained"
-            // color="00E0FF"
             sx={{
                 backgroundColor: getColors("bg"),
                 color: getColors("c"),

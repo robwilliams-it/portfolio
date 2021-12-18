@@ -53,19 +53,25 @@ const HeaderButtons = () => {
 
                 <Grid item>
                     <Link to="/projects">
-                        Projects
+                        <Typography> 
+                            Projects
+                        </Typography>   
                     </Link>
                 </Grid>
 
                 <Grid item>
                     <Link to="/experiance">
-                        Experiance
+                        <Typography> 
+                            Experiance
+                        </Typography> 
                     </Link>
                 </Grid>
 
                 <Grid item>
                     <Link to="/contact">
-                        Contact
+                        <Typography> 
+                            Contact
+                        </Typography> 
                     </Link>
                 </Grid>
                 

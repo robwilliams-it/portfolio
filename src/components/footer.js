@@ -1,4 +1,4 @@
-import { Button, Grid, Box } from '@mui/material';
+import { Button, IconButton, Grid, Box } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ResumeButton from './resumeDownload';
@@ -6,22 +6,13 @@ import ResumeButton from './resumeDownload';
 const Footer =(props) => {
     const { linkedIn } = props;
     const { gitHub } = props;
-    
-    const handleClick = (event) => {
-        // read the input
-        // redirect based on which was provided
-        const elementID = event.target.id;
-        console.log(elementID);
-        switch(elementID) {
-            case "linkedIn":
-                window.open(linkedIn);
-                break;
-            case "gitHub":
-                window.open(gitHub);
-                break;
-            default:
-                break;
-        }
+
+    const linkToLinkedIn=()=> {
+        window.open(linkedIn);
+    }
+
+    const linkToGitHub=()=> {
+        window.open(gitHub);
     }
 
     return (
@@ -57,7 +48,7 @@ const Footer =(props) => {
                 <Grid item>
                     <Button
                         id="linkedIn"
-                        onClick={ handleClick }
+                        onClick={ linkToLinkedIn }
                         sx={{
                             height:"32px",
                             width:"32px",
@@ -71,7 +62,7 @@ const Footer =(props) => {
                 <Grid item>
                     <Button
                         id="gitHub"
-                        onClick={ handleClick }
+                        onClick={ linkToGitHub }
                         sx={{
                             height:"32px",
                             width:"32px",

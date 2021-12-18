@@ -38,7 +38,11 @@
 }
 
 main, header{
-  background-color: ghostwhite;
+  /* background-color: ghostwhite; */
+}
+
+footer{
+  z-index: -2;
 }
 
 #work{
@@ -54,9 +58,9 @@ main, header{
   justify-content: center;
 }
 
-/* link{
-  text-decoration: 'none'
-} */
+a p:link, a p:visited{
+  text-decoration: none;
+}
 
 /* #work_content{
   width: 90%;
