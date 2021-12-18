@@ -11,11 +11,11 @@ const Experiance = () => {
                 display: "grid",
                 justifyContent: "center",
                 alignItems: "center",
-                width: "100%"
+                // width: "100%"
             }}
         >
             <div id="job-experiance"
-                style={{paddingBottom: "20px"}}
+                style={{paddingBottom: "100px"}}
             >
                 <JobDetails job={Moda} company={"Moda"}/>
                 <br/>

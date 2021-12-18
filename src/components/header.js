@@ -31,7 +31,12 @@ const HeaderButtons = () => {
                             color:"white"
                         }}
                     >
-                        <Typography>
+                        <Typography 
+                            sx={{
+                                fontWeight: "bold", 
+                                color: "black",
+                            }}
+                        >
                             R
                         </Typography>
                     </Card>

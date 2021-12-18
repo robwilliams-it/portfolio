@@ -4,13 +4,21 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 const ResumeButton =(props) => {
     const {alt} = props || false;
 
-    const getColors=(indicator)=>{
+    const getColors = (indicator)=>{
         if (indicator === "bg" && alt) {
             return "black"
         } else if (indicator === "c" && !alt) {
             return "black"
+        } else if ( indicator === "c" && alt ){
+            return "white"
         } else {
             return "#00E0FF"
+        }
+    }
+
+    const getText = () => {
+        if (!alt) {
+            return "RESUME"
         }
     }
 
@@ -25,7 +33,7 @@ const ResumeButton =(props) => {
                 fontWeight: "bold"
             }}
         >
-            Resume
+            {getText()}
             <FileDownloadIcon />
         </Button>
     )

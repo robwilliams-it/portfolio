@@ -18,19 +18,7 @@ const Footer =(props) => {
     return (
         <Box 
             id="footer"
-            sx={{
-                position: "absolute",
-                bottom: "0px",
-                height:"350px",
-            }}
         >
-            <img 
-                src="sidebar.png"
-                style={{
-                    position:"absolute",
-                    height:"350px",
-                }}
-            />
             <Grid
                 container
                 direction="column"
