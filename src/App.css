@@ -7,6 +7,16 @@ main, header{
   /* background-color: ghostwhite; */
 }
 
+main{
+  height: calc(100vh - 50px);
+  overflow: scroll;
+}
+
+.page {
+  height: 100%;
+  padding-bottom: 100px;
+}
+
 footer{
   z-index: -2;
 }
@@ -21,6 +31,7 @@ footer{
 
 #job-experiance{
   width: 100%;
+  padding-bottom: 50px;
   /* justify-content: center; */
 }
 
@@ -35,6 +46,21 @@ a p:link, a p:visited{
     width: 100%;
 }
 
+#work-title{
+  background-color: #00E0FF;
+}
+
+#projects #gif, #summary{
+  background-color: red;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+#projects{
+  display: grid;
+}
+
 @media screen and (min-width: 900px) {
   #footer {
     height: 200px;
@@ -44,5 +70,17 @@ a p:link, a p:visited{
 
   #job-experiance{
     width: 800px;
+  }
+
+  #projects #gif{
+    background-color: hotpink;
+  }
+
+  #projects #summary{
+    background-color: greenyellow;
+  }
+
+  #projects{
+    grid-template-columns: 1fr 1fr;  
   }
 }

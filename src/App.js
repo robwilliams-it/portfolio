@@ -14,17 +14,12 @@ function App() {
 
 
     <Router>
-    <div className="Portfolio" style={{height: "100vh", overflow: "hidden"}}>
+    <div className="Portfolio" style={{height: "100vh"}}>
         {/* TODO: update this whole component */}
         
         <HeaderButtons />
         
-        <main
-          style={{
-            height: "100vh",
-            overflow: "scroll"
-          }}
-          >
+        <main>
 
           <Routes>
             <Route path="/" element={<Landing/>}/>

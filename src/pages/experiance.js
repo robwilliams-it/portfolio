@@ -3,9 +3,10 @@ import { Moda, Fendi, Chase } from "../javascript/work_history/index.js";
 
 const Experiance = () => {
     return (
-        <div id="experiance"
+        <div 
+            id="experiance"
+            class="page"
             style={{
-                height: "100vh", 
                 top: -40,
                 zIndex: "-1",
                 display: "grid",
@@ -14,9 +15,7 @@ const Experiance = () => {
                 // width: "100%"
             }}
         >
-            <div id="job-experiance"
-                style={{paddingBottom: "100px"}}
-            >
+            <div id="job-experiance">
                 <JobDetails job={Moda} company={"Moda"}/>
                 <br/>
                 <JobDetails job={Fendi} company={"Fendi"}/>

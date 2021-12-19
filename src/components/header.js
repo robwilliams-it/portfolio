@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button, Grid, Card, Typography } from '@mui/material';
+import { Button, Grid, Paper, Typography } from '@mui/material';
 import ResumeButton from './resumeDownload.js';
 
 const HeaderButtons = () => {
@@ -20,7 +20,8 @@ const HeaderButtons = () => {
                 }}
             >
                 <Link to="/">
-                    <Card
+                    <Paper
+                        elevation={0}
                         sx={{
                             height:"36.5px",
                             width:"36.5px",
@@ -28,7 +29,7 @@ const HeaderButtons = () => {
                             display:"grid",
                             alignContent:"center",
                             justifyContent:"center",
-                            color:"white"
+                            color:"white",
                         }}
                     >
                         <Typography 
@@ -39,7 +40,7 @@ const HeaderButtons = () => {
                         >
                             R
                         </Typography>
-                    </Card>
+                    </Paper>
                 </Link>
             </div>
 
@@ -49,7 +50,7 @@ const HeaderButtons = () => {
                 justifyContent="flex-start"
                 alignItems="center"
                 columnSpacing={2}
-                sx={{height:"50px"}}
+                sx={{height:"50px", pr:"20px"}}
             > 
 
                 <Grid item>
