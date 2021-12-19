@@ -50,18 +50,23 @@ a p:link, a p:visited{
   background-color: #00E0FF;
 }
 
-#projects #gif, #summary{
+#projectDetails #gif, #summary{
   background-color: red;
   display: grid;
   align-content: center;
   justify-content: center;
 }
 
-#projects{
+#projectDetails{
   display: grid;
 }
 
-@media screen and (min-width: 900px) {
+#projects{
+  display: grid;
+  
+}
+
+@media (min-width: 900px) {
   #footer {
     height: 200px;
     width: 0px;
@@ -74,13 +79,15 @@ a p:link, a p:visited{
 
   #projects #gif{
     background-color: hotpink;
+    justify-content: start;
   }
 
   #projects #summary{
     background-color: greenyellow;
+    justify-content: end;
   }
 
-  #projects{
-    grid-template-columns: 1fr 1fr;  
+  #projectDetails{
+    grid-template-columns: 1fr 1fr;
   }
 }
