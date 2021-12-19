@@ -6,14 +6,6 @@ const Experiance = () => {
         <div 
             id="experiance"
             class="page"
-            style={{
-                top: -40,
-                zIndex: "-1",
-                display: "grid",
-                justifyContent: "center",
-                alignItems: "center",
-                // width: "100%"
-            }}
         >
             <div id="job-experiance">
                 <JobDetails job={Moda} company={"Moda"}/>
@@ -21,6 +13,7 @@ const Experiance = () => {
                 <JobDetails job={Fendi} company={"Fendi"}/>
                 <br/>
                 <JobDetails job={Chase} company={"Chase"}/>
+                <br/>
             </div>
 
         </div>

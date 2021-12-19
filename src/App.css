@@ -1,72 +1,85 @@
-/* .App {
-  text-align: center;
-} */
 
-
-main, header{
-  /* background-color: ghostwhite; */
+body, html, main{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 main{
-  height: calc(100vh - 50px);
-  overflow: scroll;
+  position: relative;
+  height: calc(100vh - 100px);
 }
 
 .page {
+  box-sizing: border-box;
   height: 100%;
-  padding-bottom: 100px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
-footer{
-  z-index: -2;
+#job-experiance{
+  overflow: scroll;
 }
 
 #work{
   box-sizing: border-box;
   width: 95%;
   max-width: 1000px;
-  margin: 0 auto;
 
-}
-
-#job-experiance{
-  width: 100%;
-  padding-bottom: 50px;
-  /* justify-content: center; */
-}
-
-a p:link, a p:visited{
-  text-decoration: none;
 }
 
 #footer {
     position: absolute;
     bottom: 0px;
-    height: 40px;
+    height: 50px;
     width: 100%;
+    background-color: white;
 }
 
 #work-title{
   background-color: #00E0FF;
 }
 
-#projectDetails #gif, #summary{
-  background-color: red;
+#projectDetails #gif, #summary, #title{
+  /* background-color: red; */
   display: grid;
   align-content: center;
   justify-content: center;
 }
 
+
+#projectDetails #title{
+  text-align: center;
+}
+
+
+#projectDetails #summary{
+  height: 200px;
+}
+
 #projectDetails{
   display: grid;
+  height: 500px;
 }
 
 #projects{
   display: grid;
-  
+  justify-content: center;
+  align-content: center;
+}
+
+#projects #text{
+  max-width: 400px;
 }
 
 @media (min-width: 900px) {
+
+  main{
+    height: calc(100vh - 50px);
+  }
+
   #footer {
     height: 200px;
     width: 0px;
@@ -78,16 +91,13 @@ a p:link, a p:visited{
   }
 
   #projects #gif{
-    background-color: hotpink;
+    /* background-color: hotpink; */
     justify-content: start;
-  }
-
-  #projects #summary{
-    background-color: greenyellow;
-    justify-content: end;
+    padding: 0 5px
   }
 
   #projectDetails{
     grid-template-columns: 1fr 1fr;
+    height: 350px;
   }
 }

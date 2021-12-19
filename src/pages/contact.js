@@ -17,7 +17,6 @@ const Contact = () => {
                     <Typography variant="h6"
                         sx={{
                             textAlign:"center",
-                            width: "800px"
                         }}
 
                     >

@@ -1,19 +1,25 @@
 import { Grid, Typography, Button, Paper } from '@mui/material';
 
-const ProjectDetails = () => {
+
+
+const ProjectDetails = (props) => {
+    const { title, text, gif } = props;
+
     return (
-        <div id="projectDetails">
+        <Paper id="projectDetails" elevation={3}>
             <div id="summary">
-                <Paper sx={{width: "300px", height: "325px"}}>
-                    <Typography>
-                        Pokedex
-                    </Typography>
-                </Paper>
+                <Typography variant="h6" id="title"> 
+                    {title} 
+                </Typography>
+
+                <Typography  id="text">
+                    {text} 
+                </Typography>
             </div>
             <div id="gif">
-                <img src="pokedex.gif"/>
+                <img src={gif}/>
             </div>
-        </div>
+        </Paper>
     )
 }
 
