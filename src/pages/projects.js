@@ -3,9 +3,6 @@ import { Pokedex } from "../javascript/projects/index.js";
 
 const myProjects = [
     Pokedex,
-    Pokedex,
-    Pokedex,
-    Pokedex,
 
 ]
 
