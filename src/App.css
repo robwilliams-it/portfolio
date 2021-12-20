@@ -14,9 +14,17 @@ main{
 .page {
   box-sizing: border-box;
   height: 100%;
+  width: 100%;
   display: grid;
   justify-content: center;
 }
+
+
+#contactMe div{
+  width: 90%;
+  margin: 0 auto;
+}
+
 
 #burger{
   display: grid;
@@ -101,6 +109,15 @@ main{
 
   main{
     height: calc(100vh - 50px);
+  }
+
+  .page{
+    /* margin: 0 100px; */
+  }
+
+  .page div{
+    width: 80%;
+    margin: auto;
   }
 
   #footer {

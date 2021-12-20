@@ -7,19 +7,15 @@ const Contact = () => {
             class="page"
         >
             <Grid
+                id="content"
                 container
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-                sx={{height: "100%"}}
+                sx={{height: "100%", width: "100%"}}
             >
-                <Grid item>
-                    <Typography variant="h6"
-                        sx={{
-                            textAlign:"center",
-                        }}
-
-                    >
+                <Grid item sx={{width: "100%"}}>
+                    <Typography variant="h6">
                         Hey!
                         <br/>
                         Thank you for taking the time to checkout my site.

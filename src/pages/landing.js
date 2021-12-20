@@ -12,7 +12,7 @@ const Landing = () => {
                 return (
                     <Paper 
                         id="work-title"
-                        sx={{px:2, margin: "10px auto", width:`${title.length * 30}px`}}
+                        sx={{px:2, margin: "10px auto"}}
                     >
                         <Typography 
                             variant="h3"

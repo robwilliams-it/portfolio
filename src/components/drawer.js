@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Button from '@mui/material/Button';
@@ -10,6 +11,13 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
+import ResumeButton from './resumeDownload.js';
+
+const links={
+  Projects: 'projects', 
+  Experiance:'experiance',
+  Contact: 'contact'
+}
 
 const Drawer = () => {
   const [state, setState] = React.useState({
@@ -36,24 +44,23 @@ const Drawer = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
+        
+          <ListItem>
+            <ResumeButton/>
           </ListItem>
-        ))}
+
       </List>
       <Divider />
       <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
+        {['Projects', 'Experiance', 'Contact'].map((text, index) => (
+          <Link to={`/${links[text]}`}>
+            <ListItem key={text}>
+              {/* <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon> */}
+              <ListItemText primary={text} />
+            </ListItem>
+          </Link>
         ))}
       </List>
     </Box>
