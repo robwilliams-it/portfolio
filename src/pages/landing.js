@@ -2,8 +2,8 @@ import { Typography, Paper} from '@mui/material';
 
 const Landing = () => {
     const titles=[
-        "Full Stack Software engineer",
-        "Gamer"
+        "Full Stack",
+        "Front End"
     ];
 
     const renderTitles = () => {
@@ -12,7 +12,11 @@ const Landing = () => {
                 return (
                     <Paper 
                         id="work-title"
-                        sx={{px:2, margin: "10px auto"}}
+                        sx={{  
+                            px:2, 
+                            margin: "10px auto",
+                        }}
+
                     >
                         <Typography 
                             variant="h3"
@@ -45,6 +49,9 @@ const Landing = () => {
             </Typography>
             <Typography variant="h2">
               Rob
+            </Typography>
+            <Typography variant="h4">
+              & I'm interested in:
             </Typography>
 
             {renderTitles()}

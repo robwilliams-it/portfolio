@@ -10,7 +10,6 @@ const HeaderButtons = () => {
     const [isSmallScreen, setSmallScreen] = useState( window.innerWidth <= smallScreenSize )
 
     const renderButtons = () => {
-        console.log(isSmallScreen);
         if (isSmallScreen) {
             return <Drawer/>
         } else {

@@ -6,10 +6,7 @@ import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import ResumeButton from './resumeDownload.js';
 
@@ -55,9 +52,6 @@ const Drawer = () => {
         {['Projects', 'Experiance', 'Contact'].map((text, index) => (
           <Link to={`/${links[text]}`}>
             <ListItem key={text}>
-              {/* <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon> */}
               <ListItemText primary={text} />
             </ListItem>
           </Link>
@@ -71,7 +65,7 @@ const Drawer = () => {
       {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>
-            <MenuIcon/>
+            <MenuIcon sx={{color: "black"}}/>
           </Button>
           <SwipeableDrawer
             anchor={anchor}

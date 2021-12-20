@@ -1,28 +1,24 @@
 import { ProjectDetails } from '../components';
-import { Grid, Typography, Button, Paper } from '@mui/material';
+import { Pokedex } from "../javascript/projects/index.js";
 
 const myProjects = [
-    {
-        title: "Pokedex" ,
-        text: "Some Words by some one elsdksjfhkasjhdfkjshdfje this is a tesstlkasdfl;akshdf;lajksd;ljkfas;lkdfjlsakdjflakjs;df;" ,
-        gif: "pokedex.gif" ,
-    },
+    Pokedex,
+    Pokedex,
+    Pokedex,
+    Pokedex,
+
 ]
 
 const Projects = () => {
-    const renderProjects = () => {
-        return (
-            myProjects.map((proj, key) => {
+    const renderProjects = () => (
+        <div id="content" style={{padding:"5px 0"}}>
+            {myProjects.map((proj, key) => {
                 return (
-                    <ProjectDetails 
-                        title={proj.title} 
-                        gif={proj.gif}
-                        text={proj.text}
-                    />
+                    <ProjectDetails project={proj} />
                 )
-            })
-        )
-    }
+            })}
+        </div>
+    )
 
     return (
         <div 

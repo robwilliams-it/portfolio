@@ -7,13 +7,17 @@ const Experiance = () => {
             id="experiance"
             class="page"
         >
-            <div id="job-experiance">
-                <JobDetails job={Moda} company={"Moda"}/>
-                <br/>
-                <JobDetails job={Fendi} company={"Fendi"}/>
-                <br/>
-                <JobDetails job={Chase} company={"Chase"}/>
-                <br/>
+            <div
+                id="content"
+            >
+                <div id="job-experiance">
+                    <JobDetails job={Moda} company={"Moda"}/>
+                    <br/>
+                    <JobDetails job={Fendi} company={"Fendi"}/>
+                    <br/>
+                    <JobDetails job={Chase} company={"Chase"}/>
+                    <br/>
+                </div>
             </div>
 
         </div>

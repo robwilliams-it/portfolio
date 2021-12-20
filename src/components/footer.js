@@ -35,10 +35,12 @@ const Footer =(props) => {
 
                 <Grid item>
                     <Button
+                        color="primary"
+                        variant="contained"
                         id="linkedIn"
                         onClick={ linkToLinkedIn }
                         sx={{
-                            height:"32px",
+                            height:"40px",
                             width:"32px",
                             color: "black"
                         }}
@@ -49,12 +51,14 @@ const Footer =(props) => {
 
                 <Grid item>
                     <Button
+                        color="primary"
+                        variant="contained"
                         id="gitHub"
                         onClick={ linkToGitHub }
                         sx={{
-                            height:"32px",
+                            height:"40px",
                             width:"32px",
-                            color: "black"
+                            color: "black",
                         }}
                     >
                         <GitHubIcon id="gitHub" fontSize="large"/>

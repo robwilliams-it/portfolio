@@ -51,7 +51,7 @@ main{
   align-content: center;
 }
 
-#job-experiance{
+.page #content{
   overflow: scroll;
 }
 
@@ -70,6 +70,7 @@ main{
 }
 
 #work-title{
+  color: white;
   background-color: #00E0FF;
 }
 
@@ -78,11 +79,13 @@ main{
   display: grid;
   align-content: center;
   justify-content: center;
+  padding: 0 15px;
 }
 
 
 #projectDetails #title{
   text-align: center;
+  overflow: scroll;
 }
 
 
@@ -93,6 +96,13 @@ main{
 #projectDetails{
   display: grid;
   height: 500px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+#gif{
+  overflow: hidden;
 }
 
 #projects{
@@ -111,13 +121,9 @@ main{
     height: calc(100vh - 50px);
   }
 
-  .page{
-    /* margin: 0 100px; */
-  }
-
   .page div{
-    width: 80%;
-    margin: auto;
+    /* width: 80%;
+    margin: auto; */
   }
 
   #footer {
@@ -125,19 +131,18 @@ main{
     width: 0px;
   }
 
-
   #job-experiance{
     width: 800px;
-  }
-
-  #projects #gif{
-    /* background-color: hotpink; */
-    justify-content: start;
-    padding: 0 5px
   }
 
   #projectDetails{
     grid-template-columns: 1fr 1fr;
     height: 350px;
+    max-width: 1200px;
+  }
+
+  img{
+    /* background-color: chartreuse; */
+    width: 600px; 
   }
 }
