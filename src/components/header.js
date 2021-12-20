@@ -1,8 +1,31 @@
 import { Link } from "react-router-dom";
 import { Button, Grid, Paper, Typography } from '@mui/material';
-import ResumeButton from './resumeDownload.js';
+import { useEffect, useState } from "react";
+import Drawer from "./drawer.js";
+import Banner from "./banner.js";
+
+const smallScreenSize = 900;
 
 const HeaderButtons = () => {
+    const [isSmallScreen, setSmallScreen] = useState( window.innerWidth <= smallScreenSize )
+
+    const renderButtons = () => {
+        console.log(isSmallScreen);
+        if (isSmallScreen) {
+            return <Drawer/>
+        } else {
+            return <Banner/>
+        }
+    }
+
+    useEffect(()=>{
+        window.addEventListener('resize', handleResize);
+    }, [])
+
+    const handleResize = () => {
+        setSmallScreen(window.innerWidth <= smallScreenSize);
+    }
+
     return (
         
         <header 
@@ -44,44 +67,7 @@ const HeaderButtons = () => {
                 </Link>
             </div>
 
-            <Grid
-                container
-                direction="row-reverse"
-                justifyContent="flex-start"
-                alignItems="center"
-                columnSpacing={2}
-                sx={{height:"50px", pr:"20px"}}
-            > 
-
-                <Grid item>
-                    <ResumeButton />
-                </Grid>
-
-                <Grid item>
-                    <Link to="/projects">
-                        <Typography> 
-                            Projects
-                        </Typography>   
-                    </Link>
-                </Grid>
-
-                <Grid item>
-                    <Link to="/experiance">
-                        <Typography> 
-                            Experiance
-                        </Typography> 
-                    </Link>
-                </Grid>
-
-                <Grid item>
-                    <Link to="/contact">
-                        <Typography> 
-                            Contact
-                        </Typography> 
-                    </Link>
-                </Grid>
-                
-            </Grid>
+            {renderButtons()}
 
       </header>
     )

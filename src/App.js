@@ -4,7 +4,7 @@ import { Moda, Fendi, Chase } from './javascript/work_history/index.js';
 import Links from './javascript/external_links/index.js';
 import JobDetails from './components/jobDetails.js';
 import { Button, Typography } from '@mui/material';
-import { HeaderButtons, Footer } from './components/index.js';
+import { HeaderButtons, Footer, Drawer } from './components/index.js';
 import { Experiance, Landing, Contact, Projects } from './pages/index.js';
 import './App.css';
 

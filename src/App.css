@@ -16,6 +16,30 @@ main{
   height: 100%;
   display: grid;
   justify-content: center;
+}
+
+#burger{
+  display: grid;
+  justify-content: end;
+  height:50px;
+}
+
+#banner{
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: end;
+  padding-right:20px;
+}
+
+#banner div{
+  display: grid;
+  align-content: center;
+  padding: 0px 5px;
+}
+
+#experiance{
   align-content: center;
 }
 
@@ -27,7 +51,6 @@ main{
   box-sizing: border-box;
   width: 95%;
   max-width: 1000px;
-
 }
 
 #footer {
