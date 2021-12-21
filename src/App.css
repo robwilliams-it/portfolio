@@ -1,4 +1,31 @@
 
+@keyframes slideInFromBottom {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+
+#footer{
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+#header{
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
 body, html, main{
   margin: 0;
   padding: 0;
@@ -19,6 +46,21 @@ main{
   justify-content: center;
 }
 
+#home, #contactMe{
+  text-align: center;
+}
+
+#interests{
+  height: 80px;
+  overflow: scroll;
+}
+
+
+#summary #text{ 
+  height: 80%;
+  overflow: scroll;
+  margin: auto;
+}
 
 #contactMe div{
   width: 90%;
@@ -53,6 +95,7 @@ main{
 
 .page #content{
   overflow: scroll;
+  margin: auto;
 }
 
 #work{
@@ -70,12 +113,16 @@ main{
 }
 
 #work-title{
-  color: white;
-  background-color: #00E0FF;
+  padding: 2; 
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+#work-title:hover{
+  background-color: red;
 }
 
 #projectDetails #gif, #summary, #title{
-  /* background-color: red; */
   display: grid;
   align-content: center;
   justify-content: center;
@@ -121,11 +168,6 @@ main{
     height: calc(100vh - 50px);
   }
 
-  .page div{
-    /* width: 80%;
-    margin: auto; */
-  }
-
   #footer {
     height: 200px;
     width: 0px;
@@ -141,8 +183,16 @@ main{
     max-width: 1200px;
   }
 
+
+  #summary #text{
+    height: 100%;
+  }
+
+  #projectDetails #summary{
+    height: 100%;
+  }
+
   img{
-    /* background-color: chartreuse; */
     width: 600px; 
   }
 }

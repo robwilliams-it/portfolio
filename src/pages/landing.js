@@ -1,22 +1,22 @@
-import { Typography, Paper} from '@mui/material';
+import { Typography, Box} from '@mui/material';
 
 const Landing = () => {
     const titles=[
+        "Front End",
         "Full Stack",
-        "Front End"
+        "Mobile"
     ];
 
     const renderTitles = () => {
         return (
             titles.map((title, key)=>{
                 return (
-                    <Paper 
-                        id="work-title"
-                        sx={{  
-                            px:2, 
-                            margin: "10px auto",
+                    <Box
+                        sx={{
+                            backgroundColor: "inset.main",
+                            border: 1
                         }}
-
+                        id="work-title"
                     >
                         <Typography 
                             variant="h3"
@@ -24,7 +24,7 @@ const Landing = () => {
                         >
                             {title}
                         </Typography>
-                    </Paper>
+                    </Box>
                 )
             })
         )
@@ -34,29 +34,23 @@ const Landing = () => {
         <div 
             id="home"
             class="page"
-            style={{
-                position: "relative",
-                top: -40,
-                display: "grid",
-                justifyContent: "center",
-                alignItems: "center",
-                textAlign:"center",
-            }}
         >
-          <div id="content">
-            <Typography variant="h4">
-              Nice to meet ya! I'm
-            </Typography>
-            <Typography variant="h2">
-              Rob
-            </Typography>
-            <Typography variant="h4">
-              & I'm interested in:
-            </Typography>
+            <div id="content">
+                <Typography variant="h5">
+                Nice to meet ya! I'm
+                </Typography>
+                <Typography variant="h2">
+                Rob Williams
+                </Typography>
+                <Typography variant="h5">
+                & I'm interested in:
+                </Typography>
 
-            {renderTitles()}
-            
-          </div>
+                <div id="interests">
+                    {renderTitles()}
+                </div>
+                
+            </div>
 
         </div>
     )
