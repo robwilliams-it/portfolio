@@ -4,7 +4,7 @@ const Landing = () => {
     const titles=[
         "Front End",
         "Full Stack",
-        "Mobile"
+        "Mobile",
     ];
 
     const renderTitles = () => {
@@ -46,9 +46,7 @@ const Landing = () => {
                 & I'm interested in:
                 </Typography>
 
-                <div id="interests">
-                    {renderTitles()}
-                </div>
+                {renderTitles()}
                 
             </div>
 

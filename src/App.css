@@ -44,15 +44,11 @@ main{
   width: 100%;
   display: grid;
   justify-content: center;
+  overflow-y: scroll;
 }
 
 #home, #contactMe{
   text-align: center;
-}
-
-#interests{
-  height: 80px;
-  overflow: scroll;
 }
 
 
@@ -93,8 +89,12 @@ main{
   align-content: center;
 }
 
-.page #content{
+#job-experiance{
+  padding: 50px 0;
   overflow: scroll;
+}
+
+.page #content{
   margin: auto;
 }
 
@@ -132,7 +132,6 @@ main{
 
 #projectDetails #title{
   text-align: center;
-  overflow: scroll;
 }
 
 
@@ -162,19 +161,26 @@ main{
   max-width: 400px;
 }
 
+
 @media (min-width: 900px) {
 
   main{
     height: calc(100vh - 50px);
   }
 
+  .page{
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    justify-content: center;
+  }
+
+  #job-experiance, #content{
+    grid-column: 2 / span 1;
+  }
+
   #footer {
     height: 200px;
     width: 0px;
-  }
-
-  #job-experiance{
-    width: 800px;
   }
 
   #projectDetails{

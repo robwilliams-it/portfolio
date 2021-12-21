@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button, Grid, Paper, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { useEffect, useState } from "react";
 import Drawer from "./drawer.js";
 import Banner from "./banner.js";
@@ -42,27 +42,17 @@ const HeaderButtons = () => {
                 }}
             >
                 <Link to="/">
-                    <Paper
-                        elevation={0}
+                    <Box
                         sx={{
                             height:"36.5px",
                             width:"36.5px",
-                            backgroundColor:"#00E0FF",
                             display:"grid",
                             alignContent:"center",
                             justifyContent:"center",
-                            color:"white",
                         }}
                     >
-                        <Typography 
-                            sx={{
-                                fontWeight: "bold", 
-                                color: "black",
-                            }}
-                        >
-                            R
-                        </Typography>
-                    </Paper>
+                        <img src="logo.png" style={{height: "100%", width: "100%"}}/>
+                    </Box>
                 </Link>
             </div>
 
