@@ -24,19 +24,27 @@
 
 #header{
   animation: 1s ease-out 0s 1 slideInFromTop;
+  background-color: white;
+  height: 50px;
 }
 
-body, html, main{
+body, html, #root,main{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+  height: 100%;
 }
 
 main{
   position: relative;
-  height: 90%;
-  background-color: greenyellow;
+  height: 100%;
+  align-self: start;
+}
+
+.Portfolio{
+  height: 100%;
+  display: grid;
 }
 
 .page {

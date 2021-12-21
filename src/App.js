@@ -27,7 +27,7 @@ function App() {
 
 
     <Router>
-      <div className="Portfolio" style={{height: "100vh"}}>
+      <div className="Portfolio">
 
           <ThemeProvider theme={theme}>
 
