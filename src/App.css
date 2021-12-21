@@ -38,13 +38,14 @@ body, html, #root,main{
 
 main{
   position: relative;
-  height: 100%;
-  align-self: start;
+  grid-row: 2 span 1;
+  overflow: scroll;
 }
 
 .Portfolio{
   height: 100%;
   display: grid;
+  grid-template-rows: 50px auto 50px;
 }
 
 .page {
@@ -53,7 +54,6 @@ main{
   width: 100%;
   display: grid;
   justify-content: center;
-  overflow-y: scroll;
 }
 
 #home, #contactMe{
@@ -146,9 +146,10 @@ main{
 
 #projectDetails{
   display: grid;
-  height: 500px;
-  margin: 0 auto;
+  height: 400px;
+  margin: 0 auto 15px auto;
   width: 80%;
+  overflow: hidden;
 }
 
 
@@ -156,11 +157,6 @@ main{
   overflow: hidden;
 }
 
-#projects{
-  display: grid;
-  justify-content: center;
-  align-content: center;
-}
 
 #projects #text{
   max-width: 400px;
