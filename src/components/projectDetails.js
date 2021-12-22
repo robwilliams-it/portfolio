@@ -1,5 +1,6 @@
 import { Grid, Typography, Button, Paper } from '@mui/material';
 import LaunchIcon from '@mui/icons-material/Launch';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 
@@ -20,10 +21,25 @@ const ProjectDetails = (props) => {
                     onClick={handleClick}
                     sx={{
                         position: "absolute",
+                        right: "0px",
+                        top: "0px"
                     }}
                 >
-                    <LaunchIcon />
+                    <GitHubIcon sx={{color: "black"}} />
                 </Button>
+
+                {/* <Button
+                    onClick={TODO: send to live link}
+                    sx={{
+                        position: "absolute",
+                        right: "64px",
+                        top: "0px"
+                    }}
+                >
+                    <LaunchIcon sx={{color: "black"}} />
+                </Button> */}
+
+
                 <Typography variant="h6" id="title"> 
                     {title} 
                 </Typography>

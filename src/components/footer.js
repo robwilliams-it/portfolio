@@ -26,7 +26,6 @@ const Footer =(props) => {
                 alignItems="center"
                 sx={{
                     height: "100%",
-                    ml: "10px",
                 }}
             >
                 <Grid item>
