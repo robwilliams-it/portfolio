@@ -1,32 +1,38 @@
 import { Typography, Box} from '@mui/material';
 
+const titles=[
+    "Front End Engineering",
+    "Full Stack Engineering",
+    "Mobile Development",
+];
+
 const Landing = () => {
-    const titles=[
-        "Front End",
-        "Full Stack",
-        "Mobile",
-    ];
 
     const renderTitles = () => {
         return (
-            titles.map((title, key)=>{
-                return (
-                    <Box
-                        sx={{
-                            backgroundColor: "inset.main",
-                            border: 1
-                        }}
-                        id="work-title"
-                    >
-                        <Typography 
-                            variant="h3"
-                            key={key}
-                        >
-                            {title}
-                        </Typography>
-                    </Box>
-                )
-            })
+            <Box
+                id="work-title"
+                sx={{
+                    backgroundColor: "inset.main",
+                    border: 1,
+                    borderRadius: "10px",
+                }}
+            >
+                <ul>
+                    {titles.map((title, key)=>{
+                        return (
+                            <li>
+                                <Typography 
+                                    variant="h5"
+                                    key={key}
+                                >
+                                    {title}
+                                </Typography>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </Box>
         )
     }
 
