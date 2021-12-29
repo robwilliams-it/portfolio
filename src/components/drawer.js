@@ -12,7 +12,7 @@ import ResumeButton from './resumeDownload.js';
 
 const links={
   Projects: 'projects', 
-  Experiance:'experiance',
+  Experience:'experience',
   Contact: 'contact'
 }
 
@@ -49,7 +49,7 @@ const Drawer = () => {
       </List>
       <Divider />
       <List>
-        {['Projects', 'Experiance', 'Contact'].map((text, index) => (
+        {['Projects', 'Experience', 'Contact'].map((text, index) => (
           <Link to={`/${links[text]}`}>
             <ListItem key={text}>
               <ListItemText primary={text} />

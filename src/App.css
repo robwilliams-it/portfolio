@@ -122,9 +122,8 @@ main{
 }
 
 #work-title{
-  padding: 2; 
-  margin: 10px auto;
-  border-radius: 5px;
+  margin: 10px;
+  text-align: start;
 }
 
 #projectDetails #gif, #summary, #title{

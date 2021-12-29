@@ -18,9 +18,9 @@ const Banner = () => {
             </div>
 
             <div>
-                <Link to="/experiance">
+                <Link to="/experience">
                     <Typography> 
-                        Experiance
+                        Experience
                     </Typography> 
                 </Link>
             </div>

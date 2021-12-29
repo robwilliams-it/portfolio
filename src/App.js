@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Links from './javascript/external_links/index.js';
 import { HeaderButtons, Footer } from './components/index.js';
-import { Experiance, Landing, Contact, Projects } from './pages/index.js';
+import { Experience, Landing, Contact, Projects } from './pages/index.js';
 import './App.css';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -38,7 +38,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Landing/>}/>
 
-                <Route path="/experiance" element={ <Experiance/> }/>
+                <Route path="/experience" element={ <Experience/> }/>
 
                 <Route path="/contact" element={ <Contact/> }/>
 
