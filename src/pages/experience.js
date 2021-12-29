@@ -7,6 +7,7 @@ const Experience = () => {
             id="experience"
             class="page"
         >
+            
             <div id="job-experience">
                 <JobDetails job={Engineer} company={"Full Stack Engineering"}/>
                 <br/>
