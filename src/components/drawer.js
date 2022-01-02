@@ -50,11 +50,11 @@ const Drawer = () => {
       <Divider />
       <List>
         {['Projects', 'Experience', 'Contact'].map((text, index) => (
-          <Link to={`/${links[text]}`}>
+          <a href={`#${links[text]}`}>
             <ListItem key={text}>
               <ListItemText primary={text} />
             </ListItem>
-          </Link>
+          </a>
         ))}
       </List>
     </Box>

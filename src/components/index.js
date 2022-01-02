@@ -10,5 +10,5 @@ export { default as ProjectDetails } from './projectDetails.js';
 
 export { default as Drawer } from './drawer.js';
 
-
+export { default as TitleCard } from './titleCard.js';
 

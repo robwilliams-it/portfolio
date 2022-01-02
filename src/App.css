@@ -36,30 +36,33 @@ body, html, #root,main{
   height: 100%;
 }
 
-main{
-  position: relative;
-  grid-row: 2 span 1;
-  overflow: scroll;
-}
-
 .Portfolio{
   height: 100%;
   display: grid;
   grid-template-rows: 50px auto 50px;
 }
 
+main{
+  position: relative;
+  grid-row: 2 / span 1;
+  overflow: scroll;
+}
+
 .page {
-  box-sizing: border-box;
   height: 100%;
   width: 100%;
   display: grid;
   justify-content: center;
 }
 
+
 #home, #contactMe{
   text-align: center;
 }
 
+#experience{
+  padding: 100px 0;
+}
 
 #summary #text{ 
   height: 80%;
@@ -92,15 +95,6 @@ main{
   display: grid;
   align-content: center;
   padding: 0px 5px;
-}
-
-#experiance{
-  align-content: center;
-}
-
-#job-experiance{
-  padding: 50px 0;
-  overflow: scroll;
 }
 
 .page #content{
@@ -161,21 +155,19 @@ main{
   max-width: 400px;
 }
 
+#titles{
+  transition: .5s linear;
+}
+
 
 @media (min-width: 900px) {
 
   main{
-    height: calc(100vh - 50px);
+    grid-row: 2 / span 2;
   }
 
-  .page{
-    display: grid;
-    grid-template-columns: 50px auto 50px;
-    justify-content: center;
-  }
-
-  #job-experiance, #content{
-    grid-column: 2 / span 1;
+  .epage{
+    margin: 0 100px
   }
 
   #footer {

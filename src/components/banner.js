@@ -10,27 +10,27 @@ const Banner = () => {
             </div>
 
             <div>
-                <Link to="/projects">
+                <a href="#projects">
                     <Typography> 
                         Projects
                     </Typography>   
-                </Link>
+                </a>
             </div>
 
             <div>
-                <Link to="/experience">
+                <a href="#experience">
                     <Typography> 
                         Experience
                     </Typography> 
-                </Link>
+                </a>
             </div>
 
             <div>
-                <Link to="/contact">
+                <a href="#contactMe">
                     <Typography> 
                         Contact
                     </Typography> 
-                </Link>
+                </a>
             </div>
             
         </nav>

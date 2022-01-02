@@ -41,7 +41,7 @@ const HeaderButtons = () => {
                     paddingLeft: "20px"
                 }}
             >
-                <Link to="/">
+                <a href="#home">
                     <Box
                         sx={{
                             height:"36.5px",
@@ -53,7 +53,7 @@ const HeaderButtons = () => {
                     >
                         <img src="logo.png" style={{height: "100%", width: "100%"}}/>
                     </Box>
-                </Link>
+                </a>
             </div>
 
             {renderButtons()}

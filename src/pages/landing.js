@@ -1,40 +1,7 @@
 import { Typography, Box} from '@mui/material';
-
-const titles=[
-    "Front End Engineering",
-    "Full Stack Engineering",
-    "Mobile Development",
-];
+import { TitleCard } from '../components/index.js';
 
 const Landing = () => {
-
-    const renderTitles = () => {
-        return (
-            <Box
-                id="work-title"
-                sx={{
-                    backgroundColor: "inset.main",
-                    border: 1,
-                    borderRadius: "10px",
-                }}
-            >
-                <ul>
-                    {titles.map((title, key)=>{
-                        return (
-                            <li>
-                                <Typography 
-                                    variant="h5"
-                                    key={key}
-                                >
-                                    {title}
-                                </Typography>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </Box>
-        )
-    }
 
     return (
         <div 
@@ -52,7 +19,7 @@ const Landing = () => {
                 & I'm interested in:
                 </Typography>
 
-                {renderTitles()}
+                <TitleCard/>
                 
             </div>
 

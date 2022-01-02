@@ -31,20 +31,14 @@ function App() {
 
           <ThemeProvider theme={theme}>
 
-            <HeaderButtons />
             
+            <HeaderButtons />
             <main>
 
-              <Routes>
-                <Route path="/" element={<Landing/>}/>
-
-                <Route path="/experience" element={ <Experience/> }/>
-
-                <Route path="/contact" element={ <Contact/> }/>
-
-                <Route path="/projects" element={ <Projects/> }/>
-
-              </Routes>
+            <Landing/>
+            <Experience/>
+            <Projects/>
+            <Contact/>
 
             </main>
             

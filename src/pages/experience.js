@@ -5,19 +5,21 @@ const Experience = () => {
     return (
         <div 
             id="experience"
-            class="page"
+            class="epage"
         >
-            
-            <div id="job-experience">
-                <JobDetails job={Engineer} company={"Full Stack Engineering"}/>
-                <br/>
-                <JobDetails job={Moda} company={"Moda"}/>
-                <br/>
-                <JobDetails job={Fendi} company={"Fendi"}/>
-                <br/>
-                <JobDetails job={Chase} company={"Chase"}/>
-                <br/>
+            <div id="content">
+                <div id="job-experience">
+                    <JobDetails job={Engineer} company={"Full Stack Engineering"}/>
+                    <br/>
+                    <JobDetails job={Moda} company={"Moda"}/>
+                    <br/>
+                    <JobDetails job={Fendi} company={"Fendi"}/>
+                    <br/>
+                    <JobDetails job={Chase} company={"Chase"}/>
+                    <br/>
+                </div>
             </div>
+
 
         </div>
     )
