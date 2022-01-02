@@ -12,7 +12,10 @@ const Contact = () => {
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-                sx={{height: "100%", width: "100%"}}
+                sx={{
+                    height: "100%", 
+                    width: "100%"
+                }}
             >
                 <Grid item sx={{width: "100%"}}>
                     <Typography variant="h6">

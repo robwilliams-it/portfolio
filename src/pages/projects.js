@@ -11,7 +11,6 @@ const Projects = () => {
     return (
         <div 
             id="projects"
-            class="page"
         >
             
             <div id="content" style={{padding:"5px 0"}}>
