@@ -23,10 +23,9 @@ const Contact = () => {
                         <br/>
                         Thank you for taking the time to checkout my site.
                         <br/>
-                        I am currently looking for a Front-End or Full-Stack positions
-                        either remote or in TX (preferably around Austin, but open to other areas)
+                        My inbox is always open if you would like to chat. 
                         <br/>
-                        Currently open to full time, part time, contract, or temp work.
+                        
                     </Typography>
                 </Grid>
 

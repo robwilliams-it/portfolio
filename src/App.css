@@ -159,6 +159,19 @@ main{
   transition: .5s linear;
 }
 
+#pageHeading{
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* #resumeDownload, #linkedIn, #gitHub{
+  transition: transform 250ms;
+}
+
+#resumeDownload:hover, #linkedIn:hover, #gitHub:hover{
+  transform: translateY(-10px);
+} */
+
 
 @media (min-width: 900px) {
 

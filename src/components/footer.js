@@ -34,7 +34,7 @@ const Footer =(props) => {
 
                 <Grid item>
                     <Button
-                        color="primary"
+                        className="foot-button"
                         variant="contained"
                         id="linkedIn"
                         onClick={ linkToLinkedIn }
@@ -50,7 +50,6 @@ const Footer =(props) => {
 
                 <Grid item>
                     <Button
-                        color="primary"
                         variant="contained"
                         id="gitHub"
                         onClick={ linkToGitHub }

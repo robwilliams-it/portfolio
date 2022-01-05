@@ -1,3 +1,4 @@
+import { Typography, Divider } from "@mui/material";
 import { JobDetails } from "../components";
 import { Moda, Fendi, Chase, Engineer } from "../javascript/work_history/index.js";
 
@@ -7,6 +8,15 @@ const Experience = () => {
             id="experience"
             class="epage"
         >
+            <div
+                id="pageHeading"
+            >
+                <Typography variant="h4">
+                    Work Experiance
+                </Typography>
+                <br/>
+            </div>
+            
             <div id="content">
                 <div id="job-experience">
                     <JobDetails job={Engineer} company={"Full Stack Engineering"}/>
