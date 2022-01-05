@@ -156,7 +156,8 @@ main{
 }
 
 #titles{
-  transition: .5s linear;
+  /* transition: .5s linear; */
+  transition: opacity 1s, top .5s;
 }
 
 #pageHeading{

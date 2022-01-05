@@ -28,6 +28,7 @@ const TitleCard = () => {
         newTarget.next = n;
         
         newTarget.holding = Object.values(newTarget);
+        newTarget.holding.pop();
 
         setTargets(newTarget);
     }
@@ -48,10 +49,10 @@ const TitleCard = () => {
         }
     }
 
-    const getLeftPos = (orderIndex) => {
+    const getOpacity = (orderIndex) => {
         
-        if (!targets.holding.includes(orderIndex)){
-            return 800;
+        if (orderIndex === targets.active){
+            return 1;
         } else {
             return 0;
         }
@@ -76,8 +77,8 @@ const TitleCard = () => {
                             id="titles"
                             style={{
                                 top: `${getTopPos(key)}px`,
-                                left: `${getLeftPos(key)}px`,
-                                // opacity: 1,
+                                // left: `${getLeftPos(key)}px`,
+                                opacity: getOpacity(key),
                                 textAlign: "center",
                                 paddingTop: "4px",
                                 position: "absolute",
